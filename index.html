@@ -9,26 +9,51 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
         .resume-pdf {
             width: 100%;
-            height: 100vh;
+            height: 100%;
             border: none;
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <embed class="resume-pdf" src="Siddharth_Aelpula.pdf" type="application/pdf">
+    <h1>Your Resume</h1>
+    <embed class="resume-pdf" src="your_resume.pdf" type="application/pdf">
+    <p>View more about me on <a href="https://github.com/shatter-star">GitHub</a>.</p>
 </div>
 
 </body>
