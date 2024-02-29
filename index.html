@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download PDF</title>
+    <title>Siddharth's Resume</title>
 </head>
 <body>
-    <h1>Download Resume PDF</h1>
-    <p>Click the button below to download the resume PDF:</p>
-    <a href="https://github.com/shatter-star/Resume/raw/main/Resume.pdf" download="Resume.pdf">Download PDF</a>
+    <script>
+        // When the page loads, trigger the download
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'https://github.com/shatter-star/Resume/raw/main/Siddharth_Resume.pdf';
+            link.download = 'Siddharth_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
 </body>
 </html>
